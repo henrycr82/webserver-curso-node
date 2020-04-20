@@ -1,0 +1,17 @@
+<!-- importamos el partial 'views/partials/head.hbs' -->
+{{> head }}
+        <!-- {{> navbar }} importamos el partial 'views/partials/navbar.hbs' -->
+        {{> navbar }}
+        <div class="row">
+            <div class="col-8">
+                <!-- {{ titulo_principal }} recibimos la variable titulo_principal del server.js -->
+                <h1>{{ titulo_principal }}</h1>
+                <!-- {{ contenido }} recibimos la variable contenido del server.js -->
+                <p>{{ contenido }}</p>
+            </div>
+            <div class="col-4">
+                <img src="assets/img/node.jpg" alt="" class="img-thumbnail">
+            </div>
+        </div>
+<!-- importamos el partial 'views/partials/footer.hbs' -->
+{{> footer }}
